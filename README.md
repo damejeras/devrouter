@@ -22,4 +22,12 @@ networks:
 
 ```
 
-certificates are loaded from `certs/` and `traefik/tls.yml`
+Certificates are loaded from `certs/` and `traefik/tls.yml`
+
+Easiest way to generate self signed ceritificates is with [mkcert](https://github.com/FiloSottile/mkcert).
+
+```
+mkcert install
+cd certs/
+mkcert test.localhost
+```
