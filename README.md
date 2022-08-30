@@ -22,12 +22,12 @@ networks:
 
 ```
 
-Certificates are loaded from `certs/` and `traefik/tls.yml`
-
-Easiest way to generate self signed ceritificates is with [mkcert](https://github.com/FiloSottile/mkcert).
-
+# Run devrouter
 ```
 mkcert install
 cd certs/
-mkcert test.localhost
+mkcert *.localhost
+cd ..
+docker network create devrouter
+docker-compose up -d
 ```
