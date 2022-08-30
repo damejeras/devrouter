@@ -26,7 +26,7 @@ networks:
 ```
 mkcert install
 cd certs/
-mkcert *.localhost
+mkcert localhost *.localhost
 cd ..
 docker network create devrouter
 docker-compose up -d

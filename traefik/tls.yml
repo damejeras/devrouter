@@ -1,4 +1,4 @@
 tls:
   certificates:
-    - certFile: /certs/_wildcard.localhost.pem
-      keyFile: /certs/_wildcard.localhost-key.pem
+    - certFile: /certs/localhost+1.pem
+      keyFile: /certs/localhost+1-key.pem
